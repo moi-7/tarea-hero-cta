@@ -9,11 +9,59 @@
 </head>
 <body>
     <header id="encabezado">
-        <nav>
-            <img src="" alt="">
+        <nav class="flex">
+            <div>
+                <img src="assets/isotipo.png" alt="Logo de Detective comics, una editorial de comics estadounidense">
+            </div>
+
+            <ul class="flex">
+                <li><a href="#">Comics</a></li>
+                <li><a href="#">Personajes</a></li>
+                <li><a href="#">Cine Y TV</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Inscribirse</a></li>
+                <li><a href="#">Acceder</a></li>
+            </ul>
+            <form role="search">
+                <input type="search" name="search" id="search" placeholder="Buscar…">
+                <button type="submit" aria-label="Buscar">
+                    <img src="assets/search.svg" alt="">
+                </button>
+            </form>
         </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main id="hero_banner">
+
+        <section class="banner_cta">
+            <h1>Descubre el mundo de los comics</h1>
+            <p>Explora desde los superhéroes más icónicos hasta las novelas gráficas más innovadoras. Hay un cómic perfecto para cada lector.</p>
+            <a href="">Lee gratis ahora</a>
+        </section>
+
+        <section>
+            <h2>Cómics imprescindibles</h2>
+            <p>Si amas los cómics, estos son los que tienes que leer. Representan lo mejor del medio, con historias y arte que perduran en el tiempo y siguen inspirando a nuevas generaciones.</p>
+
+        <div class="lista_de_comics">
+            <article>
+            <img src="assets/aww8.webp" alt="Portada del cómic de Wonder Woman #8">
+            <p>Wonder Woman #8: Una aventura moderna donde la princesa amazona enfrenta dilemas de poder y honor.</p>
+            </article>
+
+            <article>
+            <img src="assets/fp5.webp" alt="Portada del cómic Flashpoint #5">
+            <p>Flashpoint #5: El desenlace de un universo alternativo que redefine el legado de Barry Allen.</p>
+            </article>
+
+            <article>
+            <img src="assets/ds.webp" alt="Portada del cómic The Death of Superman">
+            <p>The Death of Superman: El número histórico en el que el Hombre de Acero se enfrenta a su mayor desafío.</p>
+            </article> 
+        </div>       
+        </section>
+    </main>
+    <footer>
+        <p>&copy Tributo a DC comics, página creada sin fines de lucro.</p>
+    </footer>
 </body>
 </html>
