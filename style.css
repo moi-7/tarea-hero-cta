@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-wrap: balance;
   /* outline: 1px solid rebeccapurple; */
 }
 
@@ -13,10 +14,10 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
   font-family: system-ui, sans-serif;
-  background-color: seagreen;
+  /* background-color: seagreen; */
   color: #111;
+  font-size: 1.6rem;
   line-height: 1.5;
   width: 100vw;
 }
@@ -59,14 +60,8 @@ img {
   height: auto;
 }
 
-header {
-  width: 100vw;
-}
-
 #encabezado {
   width: 100vw;
-  align-content: center;
-  position: relative;
 }
 
 nav {
@@ -113,7 +108,6 @@ form input {
   padding: 0.6rem 1.5rem;
   display: none;
   transition: all 0.2s ease-in-out;
-  pointer-events: none;
 
   &:focus {
     border: 2px solid rgb(0, 116, 232);
@@ -128,6 +122,9 @@ form input {
 .searchtbn img {
   width: 2.2rem;
   height: 2.2rem;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .auth {
@@ -146,23 +143,10 @@ form input {
   display: none;
 }
 
-#hero_banner {
-  position: relative;
-  width: 100vw;
-}
-
 .banner_cta {
   background: url("assets/background.webp") no-repeat center/cover;
   color: #fff;
   height: 100vh;
-  position: relative;
-  font-size: 1rem;
-}
-
-.banner_cta h1,
-p,
-a {
-  z-index: 999;
   position: relative;
 }
 
@@ -182,23 +166,49 @@ a {
   z-index: 1;
 }
 
-#imprescindibles {
-  padding: 2rem;
-  text-align: center;
+.contenedor_texto h1,
+p,
+a {
+  z-index: 999;
+  position: relative;
 }
 
-.banner_cta a {
+.contenedor_texto {
+  font-size: 1.4rem;
+  height: 100%;
+  width: 50%;
+  /* background-color: rebeccapurple; */
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem 0;
+  padding: 0 2rem;
+}
+
+.contenedor_texto a {
   padding: 1rem 2rem;
   border-radius: 100vmax;
-  flex-flow: column wrap;
+  background-color: white;
 }
 
-.banner_cta a:hover {
-  color: #212121;
-  background-color: white;
+.contenedor_texto a:hover {
+  color: white;
+  background-color: #0074e8;;
   transition: all 0.3s ease;
 }
 
+#imprescindibles {
+  padding: 2rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
+  grid-template-rows: atuo;
+  place-items: center;
+}
+
+footer {
+  text-align: center;
+}
 
 /* Diseño responsivo breakpoints */
 
@@ -220,7 +230,6 @@ a {
   }
 }
 
-
 @media (width <= 1024px) {
   .navlinks {
     display: none;
@@ -233,15 +242,8 @@ a {
   }
 }
 
-
 @media (400px <= width <= 1200px) {
 }
-
-
-
-
-
-
 
 /* Breakpoints */
 /* 
