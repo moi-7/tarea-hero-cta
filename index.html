@@ -1,67 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet"
+    />
     <title>DC</title>
-</head>
-<body>
-    <header id="encabezado">
-        <nav class="flex">
-            <div>
-                <img src="assets/isotipo.png" alt="Logo de Detective comics, una editorial de comics estadounidense">
-            </div>
-
-            <ul class="flex">
-                <li><a href="#">Comics</a></li>
-                <li><a href="#">Personajes</a></li>
-                <li><a href="#">Cine Y TV</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Inscribirse</a></li>
-                <li><a href="#">Acceder</a></li>
-            </ul>
-            <form role="search">
-                <input type="search" name="search" id="search" placeholder="Buscar…">
-                <button type="submit" aria-label="Buscar">
-                    <img src="assets/search.svg" alt="">
-                </button>
-            </form>
-        </nav>
+  </head>
+  <body>
+    <header id="encabezado whitespace">
+      <nav class="flex">
+        <div class="flex">
+          <img
+            class="isotipo"
+            src="assets/isotipo.png"
+            alt="Logo de Detective comics, una editorial de comics estadounidense"
+          />
+          <ul class="flex navlinks">
+            <li><a href="#">Comics</a></li>
+            <li><a href="#">Personajes</a></li>
+            <li><a href="#">Cine Y TV</a></li>
+            <li><a href="#">Noticias</a></li>
+          </ul>
+        </div>
+        <div class="flex">
+          <form role="search" class="flex search">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Buscar…"
+            />
+            <span class="searchtbn">
+              <img src="assets/search.svg" alt="Icono del botón de busqueda" />
+            </span>
+          </form>
+          <ul class="flex auth">
+            <li><a href="#">Registrarse</a></li>
+            <li><a href="#">Acceder</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
+
     <main id="hero_banner">
+      <section class="banner_cta">
+        <h1>Descubre el mundo de los comics</h1>
+        <p>
+          Explora desde los superhéroes más icónicos hasta las novelas gráficas
+          más innovadoras. Hay un cómic perfecto para cada lector.
+        </p>
+        <a href="#">Explora más</a>
+      </section>
 
-        <section class="banner_cta">
-            <h1>Descubre el mundo de los comics</h1>
-            <p>Explora desde los superhéroes más icónicos hasta las novelas gráficas más innovadoras. Hay un cómic perfecto para cada lector.</p>
-            <a href="">Lee gratis ahora</a>
-        </section>
-
-        <section>
-            <h2>Cómics imprescindibles</h2>
-            <p>Si amas los cómics, estos son los que tienes que leer. Representan lo mejor del medio, con historias y arte que perduran en el tiempo y siguen inspirando a nuevas generaciones.</p>
+      <section>
+        <h2>Cómics imprescindibles</h2>
+        <p>
+          Si amas los cómics, estos son los que tienes que leer. Representan lo
+          mejor del medio, con historias y arte que perduran en el tiempo y
+          siguen inspirando a nuevas generaciones.
+        </p>
 
         <div class="lista_de_comics">
-            <article>
-            <img src="assets/aww8.webp" alt="Portada del cómic de Wonder Woman #8">
-            <p>Wonder Woman #8: Una aventura moderna donde la princesa amazona enfrenta dilemas de poder y honor.</p>
-            </article>
+          <article>
+            <img
+              src="assets/aww8.webp"
+              alt="Portada del cómic de Wonder Woman #8"
+            />
+            <p>
+              Wonder Woman #8: Una aventura moderna donde la princesa amazona
+              enfrenta dilemas de poder y honor.
+            </p>
+          </article>
 
-            <article>
-            <img src="assets/fp5.webp" alt="Portada del cómic Flashpoint #5">
-            <p>Flashpoint #5: El desenlace de un universo alternativo que redefine el legado de Barry Allen.</p>
-            </article>
+          <article>
+            <img src="assets/fp5.webp" alt="Portada del cómic Flashpoint #5" />
+            <p>
+              Flashpoint #5: El desenlace de un universo alternativo que
+              redefine el legado de Barry Allen.
+            </p>
+          </article>
 
-            <article>
-            <img src="assets/ds.webp" alt="Portada del cómic The Death of Superman">
-            <p>The Death of Superman: El número histórico en el que el Hombre de Acero se enfrenta a su mayor desafío.</p>
-            </article> 
-        </div>       
-        </section>
+          <article>
+            <img
+              src="assets/ds.webp"
+              alt="Portada del cómic The Death of Superman"
+            />
+            <p>
+              The Death of Superman: El número histórico en el que el Hombre de
+              Acero se enfrenta a su mayor desafío.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
+
     <footer>
-        <p>&copy Tributo a DC comics, página creada sin fines de lucro.</p>
+      <p>&copy Tributo a DC comics, página creada sin fines de lucro.</p>
     </footer>
-</body>
+  </body>
 </html>
