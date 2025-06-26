@@ -141,10 +141,11 @@ form input {
   cursor: pointer;
 }
 
-.menu > img {
+.menu img {
   width: 2.6rem;
   height: 2.6rem;
-  /* display: none; */
+  margin-left: 2rem;
+  display: none;
 }
 
 .banner_cta a {
@@ -170,7 +171,7 @@ form input {
   .auth {
     display: none;
   }
-  .menu {
+  .menu img {
     display: block;
   }
 }
