@@ -60,6 +60,12 @@ a {
   }
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 header {
   width: 100vw;
 }
@@ -181,10 +187,10 @@ form input {
   z-index: 1;
 }
 
-/* .banner_cta h1 p a {
-  z-index: 999;
-  color: white;
-} */
+#imprescindibles {
+  padding: 2rem;
+  text-align: center;
+}
 
 .banner_cta a {
   padding: 1rem 2rem;
