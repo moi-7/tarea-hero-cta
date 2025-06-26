@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* outline: 1px solid rebeccapurple; */
+  outline: 1px solid rebeccapurple;
 }
 
 html {
@@ -16,7 +16,7 @@ body {
   background-color: seagreen;
   color: #111;
   line-height: 1.5;
-  min-width: 100vw;
+  min-width: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -41,11 +41,6 @@ h2 {
   padding: 0;
 }
 
-img {
-  width: 40px;
-  height: 40px;
-  display: block;
-}
 
 ul {
   list-style: none;
@@ -175,3 +170,32 @@ form input {
     display: block;
   }
 }
+
+@media (width < 400px) {
+  header{
+    width: 100vw;
+  }
+
+  nav{
+    padding: 1rem;
+  }
+
+  form input {
+  padding: .4rem 1rem;
+  }
+
+  .banner_cta {
+    height: 50vh;
+    width: 100vw;
+    background: url("assets/mobile-cover.webp") no-repeat cover;
+    display: flex;
+    flex-flow: column center;
+  }
+
+  h1{
+    font-size: 2.4rem;
+    text-align: center;
+    color: white
+  }
+}
+
