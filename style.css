@@ -4,7 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-wrap: balance;
   /* outline: 1px solid rebeccapurple; */
 }
 
@@ -66,7 +65,7 @@ img {
 
 nav {
   justify-content: space-between;
-  padding: 0 5rem;
+  padding: 0 2rem;
   height: 6rem;
   text-transform: uppercase;
   background-color: #f0f0f0;
@@ -197,14 +196,6 @@ a {
   transition: all 0.3s ease;
 }
 
-/* #imprescindibles {
-  padding: 2rem;
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
-  grid-template-rows: atuo;
-  place-items: center;
-} */
 
 #imprescindibles{
   padding: 2rem;
@@ -224,7 +215,6 @@ a {
   }
 }
 
-.div1 { grid-area: 1 / 1 / 2 / 4; }
 
 footer {
   text-align: center;
