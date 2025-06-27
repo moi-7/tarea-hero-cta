@@ -14,11 +14,11 @@ html {
 
 body {
   font-family: system-ui, sans-serif;
-  /* background-color: seagreen; */
   color: #111;
   font-size: 1.6rem;
   line-height: 1.5;
   width: 100vw;
+  /* background-color: seagreen; */
 }
 
 .flex {
@@ -36,16 +36,15 @@ body {
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 a {
   text-decoration: none;
   color: #212121;
+  transition: all 0.3s ease-in-out;
 
-  &::hover {
-    transition: all 0.3s ease-in-out;
+  &:hover {
+    color: #0074e8;
   }
 
   &:focus-visible {
@@ -98,26 +97,27 @@ nav {
 
 form {
   gap: 0 2rem;
+
+  input {
+    all: unset;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2.5rem;
+    overflow: hidden;
+    padding: 0.6rem 1.5rem;
+    display: none;
+    transition: all 0.2s ease-in-out;
+
+    &:focus {
+      border: 2px solid rgb(0, 116, 232);
+      text-transform: none;
+    }
+
+    &::placeholder {
+      text-transform: uppercase;
+    }
+  }
 }
 
-form input {
-  all: unset;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 2.5rem;
-  overflow: hidden;
-  padding: 0.6rem 1.5rem;
-  display: none;
-  transition: all 0.2s ease-in-out;
-
-  &:focus {
-    border: 2px solid rgb(0, 116, 232);
-    text-transform: none;
-  }
-
-  &::placeholder {
-    text-transform: uppercase;
-  }
-}
 
 .searchtbn img {
   width: 2.2rem;
@@ -126,6 +126,7 @@ form input {
   z-index: 2;
   cursor: pointer;
 }
+
 
 .auth {
   padding-left: 4rem;
@@ -172,27 +173,28 @@ a {
 }
 
 .contenedor_texto {
-  font-size: 1.4rem;
-  height: 100%;
   width: 50%;
-  /* background-color: rebeccapurple; */
+  height: 100%;
+  font-size: 1.4rem;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
   gap: 2rem 0;
   padding: 0 2rem;
+  /* background-color: rebeccapurple; */
 }
+
 
 .contenedor_texto a {
   padding: 1rem 2rem;
   border-radius: 100vmax;
   background-color: white;
-}
 
-.contenedor_texto a:hover {
-  color: white;
-  background-color: #0074e8;
-  transition: all 0.3s ease;
+  &:hover {
+    color: white;
+    background-color: #0074e8;
+    transition: all 0.3s ease;
+  }
 }
 
 
@@ -256,9 +258,6 @@ footer {
     display: block;
   }
 }
-
-@media (400px <=width <=1200px) {}
-
 
 
 
