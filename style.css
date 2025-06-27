@@ -193,18 +193,38 @@ a {
 
 .contenedor_texto a:hover {
   color: white;
-  background-color: #0074e8;;
+  background-color: #0074e8;
   transition: all 0.3s ease;
 }
 
-#imprescindibles {
+/* #imprescindibles {
   padding: 2rem;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
   grid-template-rows: atuo;
   place-items: center;
+} */
+
+#imprescindibles{
+  padding: 2rem;
+  text-align: center;
+  background: url("assets/fondo-lista-comics2.png") no-repeat center/cover;
 }
+
+.lista_de_comics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0 1rem;
+
+  img {
+    width: 30rem;
+    height: auto;
+  }
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 4; }
 
 footer {
   text-align: center;
@@ -228,6 +248,13 @@ footer {
   .menu img {
     margin-left: 1rem;
   }
+
+  #imprescindibles{
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 2rem 0;
+  }
 }
 
 @media (width <= 1024px) {
@@ -244,6 +271,9 @@ footer {
 
 @media (400px <= width <= 1200px) {
 }
+
+
+
 
 /* Breakpoints */
 /* 
