@@ -20,7 +20,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   width: 100vw;
-  background-color: seagreen;
 }
 
 ul {
@@ -158,7 +157,7 @@ form {
 .banner_cta {
   background: url("assets/background.webp") no-repeat center/cover;
   color: #fff;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 6rem);
   position: relative;
 }
 
