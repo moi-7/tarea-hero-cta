@@ -1,10 +1,25 @@
-let Iconsearch = document.querySelector(".searchtbn");
+let iconSearch = document.querySelector(".searchtbn");
+let inputSearch = document.querySelector("#search");
+let nav = document.querySelector("nav");
 
-Iconsearch.addEventListener("click", () => {
-  let inputSearch = document.querySelector("#search");
+iconSearch.addEventListener("click", () => {
   inputSearch.classList.toggle("block");
   inputSearch.classList.toggle("translate");
   if (inputSearch.classList.contains("block")) {
     inputSearch.focus();
   }
 });
+
+
+
+
+function getzIndex() {
+  if (!inputSearch) return null;
+  try {
+    return window.getComputedStyle(inputSearch).zIndex || null;
+  } catch (e) {
+    return null;
+  }
+}
+
+console.log(getzIndex());
