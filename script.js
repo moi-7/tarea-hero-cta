@@ -9,17 +9,3 @@ iconSearch.addEventListener("click", () => {
     inputSearch.focus();
   }
 });
-
-
-
-
-function getzIndex() {
-  if (!inputSearch) return null;
-  try {
-    return window.getComputedStyle(inputSearch).zIndex || null;
-  } catch (e) {
-    return null;
-  }
-}
-
-console.log(getzIndex());
