@@ -30,6 +30,7 @@ a {
   text-decoration: none;
   color: #212121;
   transition: all 0.3s ease-in-out;
+  display: inline-block;
 
   &:hover {
     color: #0074e8;
@@ -252,23 +253,25 @@ footer {
   }
 
   .contenedor_texto {
-    width: 80%;
+    width: 70%;
     height: 1rem;
     padding: 0 1rem;
     display: block;
     position: absolute;
     bottom: 40rem;
     left: 0;
+    gap: 0;
   }
 
   .contenedor_texto h1 {
     font-size: 3rem;
     font-family: "Roboto Slab", sans-serif;
+    line-height: 1;
   }
 
   .contenedor_texto p {
     font-size: 1.8rem;
-    margin-block: 3rem;
+    margin-block: 2rem;
   }
 
   #imprescindibles {
