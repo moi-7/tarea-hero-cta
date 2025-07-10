@@ -1,3 +1,18 @@
+/* Fuentes impotadas localmente */
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("assets/fonts/Roboto-Slab.ttf") format("ttf-variations");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dangrek";
+  src: url("assets/fonts/Dangrek.ttf") format("ttf-variations");
+  font-display: swap;
+}
+
+
 /* Estilos Gloables */
 
 *,
@@ -15,7 +30,7 @@ html {
 }
 
 body {
-  font-family: system-ui, sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   color: #111;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -68,7 +83,6 @@ img {
 
 /*--------------Clases de utilidad--------------*/
 
-
 #encabezado {
   width: 100vw;
   height: 6rem;
@@ -80,7 +94,6 @@ nav {
   background-color: #f0f0f0;
   justify-content: space-between;
   text-transform: uppercase;
-  font-family: "Roboto Slab", serif;
   font-size: 1.3rem;
   letter-spacing: 0.1.8rem;
   font-weight: bold;
@@ -130,7 +143,6 @@ form {
   }
 }
 
-
 .searchtbn img {
   width: 2.2rem;
   height: 2.2rem;
@@ -138,7 +150,6 @@ form {
   z-index: 2;
   cursor: pointer;
 }
-
 
 .auth {
   padding-left: 4rem;
@@ -158,10 +169,12 @@ form {
 
 .banner_cta {
   background: url("assets/background.webp") no-repeat center/cover;
-  color: #f5f5f5;
+  color: #eaeaea;
   height: calc(100vh - 6rem);
   position: relative;
+  padding: 0 0 8rem 0;
 }
+
 
 .banner_cta::before {
   content: "";
@@ -172,35 +185,39 @@ form {
   height: 100%;
   z-index: 1;
   background: oklch(0 0 0);
-  background: linear-gradient(0deg,
-      oklch(0% 0 0) 0%,
-      oklch(100% 0 0 / 0) 100%);
-}
-
-.contenedor_texto h1,
-p,
-a {
-  z-index: 999;
-  position: relative;
+  background: linear-gradient(0deg, oklch(0% 0 0) 0%, oklch(100% 0 0 / 0) 100%);
 }
 
 .contenedor_texto {
   width: 50%;
   height: 100%;
-  font-size: 1.4rem;
+  position: relative;
+  z-index: 999;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
   gap: 2rem 0;
-  padding: 0 2rem;
-  /* background-color: rebeccapurple; */
+  padding: 2rem;
 }
 
+.banner_titulo {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "Dangrek", sans-serif;
+  text-wrap: pretty;
+  width: 20ch;
+}
+
+.banner_subtitulo {
+  font-size: 1.6rem;
+  color: rgba(234, 234, 234, .9);
+  width: 38ch;
+}
 
 .contenedor_texto a {
   padding: 1rem 2rem;
   border-radius: 100vmax;
-  background-color: white;
+  background-color: #eaeaea;
 
   &:hover {
     color: white;
@@ -208,7 +225,6 @@ a {
     transition: all 0.3s ease;
   }
 }
-
 
 #imprescindibles {
   padding: 2rem;
@@ -231,14 +247,13 @@ a {
   }
 }
 
-
 footer {
   text-align: center;
 }
 
-/* Diseño responsivo breakpoints */
+/* Pantallas pequeñas */
 
-@media (width <=640px) {
+@media (max-width: 640px) {
   nav {
     padding: 1rem;
   }
@@ -248,31 +263,28 @@ footer {
   }
 
   .banner_cta {
-    height: calc(100vh - 6rem);
     background: url("assets/mobile-cover.webp") no-repeat cover;
-    position: relative;
+  }
+
+  .contenedor_texto{
+    gap: 1.5rem 0;
+  }
+
+  .contenedor_texto a {
+    padding: .8rem 1.5rem;
+    font-size: 1.4rem;
   }
 
   .contenedor_texto {
-    width: 70%;
-    height: 1rem;
-    padding: 0 1rem;
-    display: block;
-    position: absolute;
-    bottom: 40rem;
-    left: 0;
-    gap: 0;
+    width: 100%;
   }
 
-  .contenedor_texto h1 {
-    font-size: 3rem;
-    font-family: "Roboto Slab", sans-serif;
-    line-height: 1;
+  .banner_titulo {
+    font-size: 2.4rem;
   }
 
-  .contenedor_texto p {
-    font-size: 1.8rem;
-    margin-block: 2rem;
+  .banner_subtitulo {
+    font-size: 1.4rem;
   }
 
   #imprescindibles {
@@ -287,10 +299,14 @@ footer {
       width: 28rem;
       height: 50rem;
       place-self: center;
-      margin: 0 auto; /* fallback for Firefox */
+      margin: 0 auto;
+      /* fallback for Firefox */
     }
   }
 }
+/*--------------Pantallas pequeñas--------------*/
+
+
 
 @media (width <=1024px) {
   .navlinks {
@@ -305,7 +321,6 @@ footer {
     display: block;
   }
 }
-
 
 /* Breakpoints */
 /* 

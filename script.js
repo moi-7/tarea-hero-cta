@@ -9,3 +9,6 @@ iconSearch.addEventListener("click", () => {
     inputSearch.focus();
   }
 });
+
+
+
